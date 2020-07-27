@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Build a Technical Documentation Page</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="nav-bar">
+        <header id="doc-description">My favourite HTML tags</header>
+        <ul>
+          <li><a class="nav-link" href="#image">Image</a></li>
+          <li>
+            <a class="nav-link" href="#button">Button</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#linebreak">Line break</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#link">Link</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#video">Video</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="main-section">
+        <header id="image">Image</header>
+        <div class="information">
+          <p>
+            The <code>< img ></code> tag is used to embed an image in an HTML
+            page.<br />
+            Images are not technically inserted into a web page; images are
+            linked to web pages.<br />
+            The <code>< img ></code> tag creates a holding space for the
+            referenced image.
+          </p>
+
+          <p class="example">Usage Examples</p>
+          <ul>
+            Insert image from another folder.
+            <li>
+              <code
+                >< img src="/images/stickman.gif" alt="Stickman" width="24"
+                height="39" ></code
+              >
+            </li>
+          </ul>
+          <ul>
+            Insert image from another website.
+            <li>
+              <code
+                >< img src="https://www.w3schools.com/images/lamp.jpg"
+                alt="Lamp" width="32" height="32" ></code
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="button">Button</header>
+        <div class="information">
+          <p>
+            The <code>< button ></code> tag defines a clickable button.<br />
+            Inside a <code>< button ></code> element you can put text (and tags
+            like <code> < i ></code>, <code>< strong ></code>,
+            <code>< br ></code>, <code>< img > </code>, etc).<br />
+          </p>
+
+          <p class="example">Usage Examples</p>
+          <ul>
+            A button that displays the text "Click Me!".
+            <li>
+              <code>< button type="button" >Click Me!< /button ></code>
+            </li>
+          </ul>
+          <ul>
+            A button that is used to submit information.
+            <li>
+              <code
+                >< button type="submit" value="Submit">Submit< /button ></code
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="linebreak">Line break</header>
+        <div class="information">
+          <p>
+            The <code>< br ></code> tag inserts a single line break.<br />
+            The <code>< br ></code> tag is an empty tag which means that it has
+            no end tag.
+          </p>
+
+          <p class="example">Usage Examples</p>
+          <ul>
+            Force a break in a paragraph.
+            <li>
+              <code>< p ></code>Be not afraid of greatness.<code>< br ></code>
+              Some are born great<code>< /p ></code>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="link">Link</header>
+        <div class="information">
+          <p>
+            The <code>< link ></code> tag defines the relationship between the
+            current document and an external resource.<br />
+            The <code>< link ></code> tag is most often used to link to external
+            style sheets.<br />
+            The <code>< link ></code> element is an empty element, it contains
+            attributes only.
+          </p>
+
+          <p class="example">Usage Examples</p>
+          <ul>
+            Link to an external stylesheet.
+            <li>
+              <code>< link rel="stylesheet" href="styles.css" ></code>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="video">Video</header>
+        <div class="information">
+          <p>
+            The <code>< video ></code> tag is used to embed video content in a
+            document, such as a movie clip or other video streams.<br />
+            The <code>< video ></code> tag contains one or more<code>
+              < source > </code
+            >tags with different video sources. The browser will choose the
+            first source it supports<br />
+            The text between the <code>< video ></code> and
+            <code>< /video ></code> tags will only be displayed in browsers that
+            do not support the <code>< video ></code> element.
+          </p>
+
+          <p class="example">Usage Examples</p>
+          <ul>
+            Play a video
+            <li>
+              <code
+                >< video width="320" height="240" controls> < source
+                src="movie.mp4" type="video/mp4"> < source src="movie.ogg"
+                type="video/ogg"> Your browser does not support the video tag. <
+                /video ></code
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
